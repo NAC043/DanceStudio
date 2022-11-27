@@ -1,0 +1,48 @@
+extends base.pug
+block scripts  
+    script(src="/static/index.js")
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#intro 
+        div Aurora Dance Academy 
+        div#small Eat Sleep Dance Repeat
+
+    section#mission 
+      div.name Our Mission
+      div.card 
+          h3 Dance is fun 
+          .card-box 
+            .card-img 
+                img(src="/static/dance1.png", alt="")
+            .card-content 
+                p This is the best dance academy in the whole country
+      div.card 
+          h3 World class dance 
+          .card-box 
+            .card-img 
+                img(src="/static/dance2.png", alt="")
+            .card-content 
+                p This is the best dance academy in the whole country
+      div.card 
+          h3 All types of dance 
+          .card-box 
+            .card-img 
+                img(src="/static/dance3.png", alt="")
+            .card-content 
+                p This is the best dance academy in the whole country
+    
+    section#sponsor 
+        div.sponsor Our Sponsors 
+        .sponsors 
+            img(src="/static/apple.png", alt="Apple.inc",class="spImg")
+            img(src="/static/skype.png", alt="Skype",class="spImg")
+            img(src="/static/microsoft.png", alt="Microsoft",class="spImg")
+            img(src="/static/google.png", alt="Google",class="spImg")
+            img(src="/static/hp.png", alt="HP",class="spImg")
+    
+    script
+      include ../static/index.js

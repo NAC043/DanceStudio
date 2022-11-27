@@ -1,0 +1,32 @@
+use auroraKart
+
+//Showing all the databases
+show dbs
+
+//Creating a collection
+db.<collection_name>
+
+//Showing the collections
+show collections
+
+
+//insertion of objects in the db
+db.items.insertOne({name:"Tide",item:"detergent"})
+db.items.insertMany([{name:"Tide",item:"detegent"},{name:"Rin",item:"detergent"}])
+
+
+//Searching the for the objects
+db.item.find()  //Returns all the objects in the collection text
+db.item.find({name:"Tide"})   //Finds the object with the given filter object
+db.item.find({rating:{$gte:3.5}})  //returns objects with rating>=3.5
+db.item.find({rating:3.5},{price:40000})  //And operation
+db.item.find($or:[{rating:3.5},{price:34999}])  //Or operation
+db.item.find({rating:3.4},{rating:1,qty:1})  //Shows only rating and qty
+
+//Deleting the objects
+db.item.deleteOne({item:"detergent"})
+db.item.deleteMany({item:"detergent"})
+
+//Updating the data
+db.item.updateOne({name:"Tide"},{$set:{price:2,rating:1}})
+db.item.updateMany({name:"Tide"},{$set:{price:2}})

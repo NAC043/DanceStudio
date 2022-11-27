@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* *{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+} */
+
+.container h1{
+    text-align: center;
+    margin: 12px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.container{
+    min-height: 80vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.myForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.myInput{
+    width:40%;
+    padding:9px;
+    margin:8px;
+    font-size: 16px;
+    border:2px solid rgb(236, 127, 127);
+    border-radius: 12px ;
+    outline:none;
+}
+
+.btn{
+    padding:12px 16px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    background: red;
+}
